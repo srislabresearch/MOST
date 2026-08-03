@@ -345,3 +345,42 @@ a:hover {
     font-size: 11px;
   }
 }
+
+
+<div class="layout organizers-layout">
+  <main class="main-content">
+
+
+/* Organizers page */
+.organizers-layout {
+  display: block;
+}
+
+.organizers-layout .main-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 50px;
+  row-gap: 24px;
+  width: 100%;
+  padding-right: 0;
+}
+
+.organizers-layout .committee-section {
+  margin: 0;
+}
+
+.organizers-layout .committee-section h3 {
+  margin: 0 0 8px;
+}
+
+.organizers-layout .committee-section p {
+  margin: 0 0 7px;
+  line-height: 1.44;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .organizers-layout .main-content {
+    grid-template-columns: 1fr;
+  }
+}
