@@ -356,31 +356,42 @@ a:hover {
   display: block;
 }
 
-.organizers-layout .main-content {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 50px;
-  row-gap: 24px;
+.organizers-content {
+  display: block;
   width: 100%;
   padding-right: 0;
 }
 
-.organizers-layout .committee-section {
-  margin: 0;
+.organizer-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 40px;
+  align-items: start;
 }
 
-.organizers-layout .committee-section h3 {
+.organizer-column {
+  min-width: 0;
+}
+
+.organizer-column .committee-section {
   margin: 0 0 8px;
 }
 
-.organizers-layout .committee-section p {
-  margin: 0 0 7px;
-  line-height: 1.44;
+.organizer-column .committee-section h3 {
+  margin: 0 0 3px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.organizer-column .committee-section p {
+  margin: 0 0 2px;
+  line-height: 1.25;
   text-align: left;
 }
 
 @media (max-width: 768px) {
-  .organizers-layout .main-content {
+  .organizer-columns {
     grid-template-columns: 1fr;
+    column-gap: 0;
   }
 }
