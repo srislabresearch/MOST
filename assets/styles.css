@@ -34,7 +34,7 @@ a:hover {
 /* MAIN PAGE CONTAINER */
 
 .page {
-  width: min(840px, calc(100% - 24px));
+  width: min(880px, calc(100% - 24px));
   margin: 22px auto 0;
   padding: 10px;
   background: #fff;
@@ -175,7 +175,7 @@ a:hover {
 
 .layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 225px;
+  grid-template-columns: minmax(0, 1fr) 240px;
   gap: 26px;
   align-items: start;
   padding-top: 24px;
