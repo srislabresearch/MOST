@@ -317,7 +317,7 @@ a:hover {
 
 .main-content:has(> .committee-section) {
   column-count: 2;
-  column-gap: 52px;
+  column-gap: 30px;
   column-fill: balance;
 }
 
