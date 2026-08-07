@@ -354,6 +354,8 @@ a:hover {
 
 /* SPONSORS */
 
+/* SPONSORS */
+
 .sponsors {
   margin-top: 28px;
   padding-top: 10px;
@@ -364,6 +366,7 @@ a:hover {
 .sponsor-row {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 10px;
