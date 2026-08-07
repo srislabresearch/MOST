@@ -383,6 +383,48 @@ a:hover {
   font-weight: 800;
 }
 
+.dropdown-icon {
+  margin-left: 4px;
+  font-size: 9px;
+  vertical-align: middle;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 190px;
+  margin: 0;
+  padding: 0;
+  background: #5779ad;
+  list-style: none;
+  z-index: 1000;
+}
+
+.nav-dropdown:hover .submenu {
+  display: block;
+}
+
+.nav-dropdown .submenu li {
+  width: 100%;
+}
+
+.nav-dropdown .submenu a {
+  display: block;
+  width: 100%;
+  padding: 9px 12px;
+  white-space: nowrap;
+}
+
+.nav-dropdown .submenu a:hover {
+  background: #466795;
+  text-decoration: none;
+}
 
 /* TABLET LAYOUT */
 
