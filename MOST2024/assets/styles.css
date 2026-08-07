@@ -307,6 +307,11 @@ a:hover {
   background: #e8eef7;
 }
 
+.old-date {
+  color: #000;
+  text-decoration: line-through;
+}
+
 
 /* ORGANIZERS PAGE */
 
