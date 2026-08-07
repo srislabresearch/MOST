@@ -243,6 +243,34 @@ a:hover {
   line-height: 1.4;
 }
 
+.sponsors {
+  width: 100%;
+  border-top: 1px solid #aaa;
+  padding: 25px 0 20px;
+  margin-top: 40px;
+}
+
+.sponsor-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.sponsor-row a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-row img {
+  height: 55px;
+  width: auto;
+  display: block;
+}
+
 
 /* SIDEBAR */
 
