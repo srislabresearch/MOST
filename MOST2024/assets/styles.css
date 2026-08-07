@@ -354,8 +354,6 @@ a:hover {
 
 /* SPONSORS */
 
-/* SPONSORS */
-
 .sponsors {
   margin-top: 28px;
   padding-top: 10px;
@@ -367,23 +365,23 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 10px;
+  flex-wrap: nowrap;
+  gap: 25px;
+  margin-top: 15px;
 }
 
-.sponsor-logo {
-  display: inline-flex;
+.sponsor-row a {
+  display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 88px;
-  height: 34px;
-  padding: 0 8px;
-  border: 1px solid #bbb;
-  color: #333;
-  background: #f7f7f7;
-  font-size: 12px;
-  font-weight: 800;
+}
+
+.sponsor-row img {
+  width: auto;
+  height: 50px;
+  max-width: 160px;
+  object-fit: contain;
+  display: block;
 }
 
 .dropdown-icon {
