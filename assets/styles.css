@@ -173,21 +173,6 @@ a:hover {
 
 /* MAIN PAGE LAYOUT */
 
-/*
-  The layout automatically detects whether a direct child
-  with the class "sidebar" is present.
-
-  With sidebar:
-  <div class="layout">
-    <main class="main-content">...</main>
-    <aside class="sidebar">...</aside>
-  </div>
-
-  Without sidebar:
-  <div class="layout">
-    <main class="main-content">...</main>
-  </div>
-*/
 
 .layout {
   display: grid;
@@ -197,13 +182,9 @@ a:hover {
   padding-top: 24px;
 }
 
-/* Use two columns only when a sidebar exists */
-
 .layout:has(> .sidebar) {
   grid-template-columns: minmax(0, 1fr) 240px;
 }
-
-/* Use the complete width when a sidebar does not exist */
 
 .layout:not(:has(> .sidebar)) {
   grid-template-columns: minmax(0, 1fr);
