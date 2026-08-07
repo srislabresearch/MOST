@@ -34,7 +34,7 @@ a:hover {
 /* MAIN PAGE CONTAINER */
 
 .page {
-  width: min(880px, calc(100% - 24px));
+  width: min(980px, calc(100% - 24px));
   margin: 22px auto 0;
   padding: 10px;
   background: #fff;
@@ -173,22 +173,43 @@ a:hover {
 
 /* MAIN PAGE LAYOUT */
 
+/*
+  The layout automatically detects whether a direct child
+  with the class "sidebar" is present.
+
+  With sidebar:
+  <div class="layout">
+    <main class="main-content">...</main>
+    <aside class="sidebar">...</aside>
+  </div>
+
+  Without sidebar:
+  <div class="layout">
+    <main class="main-content">...</main>
+  </div>
+*/
+
 .layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 240px;
+  grid-template-columns: minmax(0, 1fr);
   gap: 26px;
   align-items: start;
   padding-top: 24px;
 }
 
-/* Use this class on pages that do not need a sidebar:
-   <div class="layout no-sidebar"> */
+/* Use two columns only when a sidebar exists */
 
-.layout.no-sidebar {
+.layout:has(> .sidebar) {
+  grid-template-columns: minmax(0, 1fr) 240px;
+}
+
+/* Use the complete width when a sidebar does not exist */
+
+.layout:not(:has(> .sidebar)) {
   grid-template-columns: minmax(0, 1fr);
 }
 
-.layout.no-sidebar .main-content {
+.layout:not(:has(> .sidebar)) .main-content {
   width: 100%;
   padding-right: 0;
 }
@@ -308,6 +329,11 @@ a:hover {
 
 /* ORGANIZERS PAGE */
 
+/*
+  The organizer sections automatically appear in two columns.
+  No sidebar is required on the organizers page.
+*/
+
 .main-content:has(> .committee-section) {
   column-count: 2;
   column-gap: 52px;
@@ -385,11 +411,14 @@ a:hover {
   }
 
   .layout {
-    grid-template-columns: minmax(0, 1fr) 205px;
     gap: 20px;
   }
 
-  .layout.no-sidebar {
+  .layout:has(> .sidebar) {
+    grid-template-columns: minmax(0, 1fr) 205px;
+  }
+
+  .layout:not(:has(> .sidebar)) {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -413,7 +442,8 @@ a:hover {
   }
 
   .layout,
-  .layout.no-sidebar {
+  .layout:has(> .sidebar),
+  .layout:not(:has(> .sidebar)) {
     grid-template-columns: 1fr;
     gap: 18px;
     padding-top: 18px;
