@@ -1,68 +1,91 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IEEE MOSEC 2024 | IEEE MOST 2024</title>
-    <link rel="stylesheet" href="assets/styles.css">
-  </head>
-  <body>
-    <div class="page">
-      <header class="site-header">
-        <div class="logo-row">
-          <a class="most-logo-link" href="index.html" aria-label="IEEE MOST home">
-            <img class="most-logo-img" src="assets/most-logo.png" alt="MOST">
-          </a>
-          <a class="ieee-logo-link" href="https://www.ieee.org/" aria-label="IEEE">
-            <img class="ieee-logo-img" src="assets/ieee-logo.png" alt="IEEE">
-          </a>
-        </div>
-        <p class="conference-title">The Second IEEE International Conference on Mobility: Operations, Services, and Technologies</p>
-        <div class="conference-meta-row">
-          <p class="conference-meta"><span>May 1 - 3, 2024, Denton, Texas</span></p>
-          <p class="social-link">Join us on <a class="linkedin-logo-link" href="https://www.linkedin.com/company/ieee-most/?viewAsMember=true" aria-label="IEEE MOST LinkedIn"><img class="linkedin-logo-img" src="assets/linkedin.png" alt="LinkedIn"></a></p>
-        </div>
-      </header>
-      <nav class="top-nav" aria-label="Main navigation">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IEEE MOSEC 2024 | IEEE MOST 2024</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .top-nav .nav-dropdown { position: relative; }
+    .top-nav .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      min-width: 190px;
+      margin: 0;
+      padding: 0;
+      background: #5779ad;
+      list-style: none;
+    }
+    .top-nav .nav-dropdown:hover .submenu,
+    .top-nav .nav-dropdown:focus-within .submenu { display: block; }
+    .top-nav .submenu li { width: 100%; }
+    .top-nav .submenu a { white-space: nowrap; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="logo-row">
+        <a class="most-logo-link" href="index.html" aria-label="IEEE MOST home">
+          <img class="most-logo-img" src="assets/most-logo.png" alt="MOST">
+        </a>
+        <a class="ieee-logo-link" href="https://www.ieee.org/" aria-label="IEEE">
+          <img class="ieee-logo-img" src="assets/ieee-logo.png" alt="IEEE">
+        </a>
+      </div>
+      <p class="conference-title">The Second IEEE International Conference on Mobility: Operations, Services, and Technologies</p>
+      <div class="conference-meta-row">
+        <p class="conference-meta"><span>May 1 - 3, 2024, Denton, Texas</span></p>
+        <p class="social-link">Join us on <a class="linkedin-logo-link" href="https://www.linkedin.com/company/ieee-most/?viewAsMember=true" aria-label="IEEE MOST LinkedIn"><img class="linkedin-logo-img" src="assets/linkedin.png" alt="LinkedIn"></a></p>
+      </div>
+    </header>
+
+    <nav class="top-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="program.html">PROGRAM</a></li>
+        <li><a href="keynote.html">KEYNOTE/PANEL DISCUSSION</a></li>
+        <li><a href="organizers.html">ORGANIZERS</a></li>
+        <li><a href="call-for-papers.html">CFP</a></li>
+        <li><a href="submission.html">SUBMISSION</a></li>
+        <li><a href="venue.html">VENUE</a></li>
+        <li><a href="registration.html">REGISTRATION</a></li>
+        <li><a href="poster.html">POSTER/DEMO</a></li>
+        <li class="nav-dropdown">
+          <a class="active" href="workshop.html">WORKSHOP</a>
+          <ul class="submenu">
+            <li><a class="active" href="mosec.html">IEEE MOSEC 2024</a></li>
+          </ul>
+        </li>
+        <li><a href="photos.html">PHOTOS</a></li>
+      </ul>
+    </nav>
+
+    <img class="banner" src="assets/Dallas 1.jpg" alt="UNT, Dallas">
+
+    <div class="layout">
+      <main class="main-content">
+        <h2>IEEE MOSEC 2024</h2>
+        <h3>Second IEEE International Workshop on Security, Privacy, and Trust for Connected Autonomous Vehicles</h3>
+        <p><strong>IEEE MOSEC 2024, Co-located with IEEE MOST 2024, Dallas, TX</strong></p>
+
+        <p>Connected and Autonomous Vehicles (CAVs) pose significant security, trust and privacy challenges due to the large amount of sensitive data they collect, store and transmit. The vehicles themselves can be targets for various types of cyber attacks, which can lead to theft, physical harm or manipulation of many critical functions that they provide. Additionally, the connected nature of CAVs means that data collected from the vehicles can be vulnerable to breaches, as well as data sharing with other entities such as manufacturers, service providers and governments.</p>
+
+        <p>In terms of privacy, CAVs collect and store vast amounts of personal information such as driving patterns, location data and vehicle usage information. This information is sensitive and valuable, and if it falls into the wrong hands, it can be used for malicious purposes such as identity theft, targeted advertising or even physical harm. Additionally, privacy concerns are also raised with the sharing of data between CAVs and other entities, as well as the potential use of CAVs for government surveillance.</p>
+
+        <p>Furthermore, with rapid adoption of emerging technologies in CAVs, including but not limited to advanced sensing, artificial intelligence and machine learning, blockchain, etc., CAV network becomes more open, meanwhile also more vulnerable to new security, trust and privacy challenges.</p>
+
+        <p>To address these challenges, it is important to develop better security, trust and privacy approaches for CAVs, so as to secure CAVs and protect user data. In this workshop, we aim at attracting innovative research ideas from both academia and industry, and fostering discussions that could help better shape the future directions of security and privacy for CAVs.</p>
+
+        <h2>Topics</h2>
+        <p>The main research topics of interest include, but not limited to:</p>
         <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="program.html">PROGRAM</a></li>
-          <li><a href="keynote.html">KEYNOTE/PANEL DISCUSSION</a></li>
-          <li><a href="organizers.html">ORGANIZERS</a></li>
-          <li><a href="call-for-papers.html">CFP</a></li>
-          <li><a href="submission.html">SUBMISSION</a></li>
-          <li><a href="venue.html">VENUE</a></li>
-          <li><a href="registration.html">REGISTRATION</a></li>
-          <li><a href="poster.html">POSTER/DEMO</a></li>
-          <li><a href="workshop.html">WORKSHOP</a></li>
-        </ul>
-      </nav>
-      
-      <img class="banner" src="assets/Dallas 1.jpg" alt="UNT, Dallas">
-      
-      <div class="layout">
-        <main class="main-content">
-          <h2>Second IEEE International Workshop on Security, Privacy, and Trust for Connected Autonomous Vehicles                                      (IEEE MOSEC 2024, Co-located with IEEE MOST 2024, Dallas, TX)</h2>
-          <p>
-          		Connected and Autonomous Vehicles (CAVs) pose significant security, trust and privacy challenges due to the large amount of sensitive data they collect, store and transmit. The vehicles themselves can be targets for various types of cyber attacks, which can lead to theft, physical harm or manipulation of many critical functions that they provide. Additionally, the connected nature of CAVs means that data collected from the vehicles can be vulnerable to breaches, as well as data sharing with other entities such as manufacturers, service providers and governments.
-                  </p>
-          <p>
-          In terms of privacy, CAVs collect and store vast amounts of personal information such as driving patterns, location data and vehicle usage information. This information is sensitive and valuable, and if it falls into the wrong hands, it can be used for malicious purposes such as identity theft, targeted advertising or even physical harm. Additionally, privacy concerns are also raised with the sharing of data between CAVs and other entities, as well as the potential use of CAVs for government surveillance.
-                  </p>
-          <p>
-          				Furthermore, with rapid adoption of emerging technologies in CAVs, including but not limited to advanced sensing, artificial intelligence and machine learning, blockchain, etc., CAV network becomes more open, meanwhile also more vulnerable to new security, trust and privacy challenges. 
-                  </p>
-          <p>
-          						To address these challenges, it is important to develop better security, trust and privacy approaches for CAVs, so as to secure CAVs and protect user data. In this workshop, we aim at attracting innovative research ideas from both academia and industry, and fostering discussions that could help better shape the future directions of security and privacy for CAVs. 
-                  </p>
-          <h2>Topics</h2>
-          <p>
-          The main research topics of interest include, but not limited to:
-                  </p>
-          <ul>
           <li>Secure communication protocols and encryption methods to protect sensitive data transmitted between CAVs and other entities</li>
           <li>Secure systems to protect against hacking, tampering and other malicious attacks on CAVs</li>
-          <li>Establishment and management of trust between CAVs and other entities in the network </li>
+          <li>Establishment and management of trust between CAVs and other entities in the network</li>
           <li>Novel methods to protect sensitive information such as driving patterns, location data and vehicle usage information from unauthorized access and disclosure</li>
           <li>Authentication and authorization mechanisms to control access to CAV systems and data</li>
           <li>Malware detection and mitigation methods for CAVs</li>
@@ -73,18 +96,23 @@
           <li>Investigation of attacks towards CAVs</li>
           <li>Application level security in CAVs</li>
           <li>Security, privacy, and trust related safety issues</li>
-          </ul>
-          <h2>Important Dates</h2>
+        </ul>
+
+        <h2>Important Dates</h2>
+        <ul>
           <li>Deadline for submission: March 15, 2024</li>
-          <li>Acceptance Notification: March 18, 2024 </li>
+          <li>Acceptance Notification: March 18, 2024</li>
           <li>Camera-ready: March 20, 2024</li>
-          <h2>Submission</h2>
-          <p><a href="https://easychair.org/conferences/?conf=ieeemosec2024">MOSEC Paper Submission Link</a></p>
-          <h2>Organizers</h2>
-          <p> Dr. Wenjia Li, New York Institute of Technology, USA </p>
-          <p> Dr. Yuhong Liu, Santa Clara University, USA</p>
-        </main>
-      </div>
+        </ul>
+
+        <h2>Submission</h2>
+        <p><a href="https://easychair.org/conferences/?conf=ieeemosec2024" target="_blank" rel="noopener">MOSEC Paper Submission Link</a></p>
+
+        <h2>Organizers</h2>
+        <p>Dr. Wenjia Li, New York Institute of Technology, USA</p>
+        <p>Dr. Yuhong Liu, Santa Clara University, USA</p>
+      </main>
     </div>
-  </body>
+  </div>
+</body>
 </html>
