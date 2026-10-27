@@ -149,9 +149,9 @@ a:hover {
 .top-nav a,
 .top-nav .nav-label {
   display: block;
-  padding: 10px 5px;
+  padding: 10px 6px;
   color: #fff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
   line-height: 16px;
   white-space: nowrap;
@@ -164,6 +164,7 @@ a:hover {
   text-decoration: none;
 }
 
+  
 
 
 /* HERO BANNER */
