@@ -130,15 +130,18 @@ a:hover {
   overflow-x: auto;
 }
 
+
 .top-nav ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: nowrap;
+  gap: 12px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 
 .top-nav li {
   margin: 0;
