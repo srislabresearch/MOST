@@ -125,7 +125,7 @@ a:hover {
 /* TOP NAVIGATION */
 
 .top-nav {
-  margin-top: 5px;
+  margin-top: 1px;
   background: #5779ad;
   overflow-x: auto;
 }
@@ -149,9 +149,9 @@ a:hover {
 .top-nav a,
 .top-nav .nav-label {
   display: block;
-  padding: 10px 6px;
+  padding: 10px 1px;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   line-height: 16px;
   white-space: nowrap;
