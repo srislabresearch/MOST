@@ -121,18 +121,20 @@ a:hover {
 }
 
 
+
 /* TOP NAVIGATION */
 
 .top-nav {
   margin-top: 5px;
-  overflow-x: auto;
   background: #5779ad;
+  overflow-x: auto;
 }
 
 .top-nav ul {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -141,16 +143,18 @@ a:hover {
 .top-nav li {
   margin: 0;
   padding: 0;
+  flex: 0 0 auto;
 }
 
 .top-nav a,
 .top-nav .nav-label {
   display: block;
-  padding: 8px 5px;
+  padding: 10px 5px;
   color: #fff;
   font-size: 11px;
   font-weight: 800;
   line-height: 16px;
+  white-space: nowrap;
   text-decoration: none;
 }
 
@@ -159,6 +163,7 @@ a:hover {
   background: #46699d;
   text-decoration: none;
 }
+
 
 
 /* HERO BANNER */
