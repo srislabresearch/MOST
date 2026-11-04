@@ -211,24 +211,31 @@ a:hover {
 
 /* TABLE */
 
+
 .timeline-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d3d9df;
 }
 
 .timeline-table th,
 .timeline-table td {
+    border: 1px solid #d3d9df;
     padding: 8px 10px;
     text-align: left;
     vertical-align: middle;
     line-height: 1.4;
+    font-size: 13px;
 }
 
 .timeline-table th {
-    font-size: 13px;
+    background-color: #f2f5f8;
     font-weight: 600;
 }
+
 
 
 
