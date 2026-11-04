@@ -209,6 +209,29 @@ a:hover {
 }
 
 
+/* TABLE */
+
+.timeline-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.timeline-table th,
+.timeline-table td {
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.4;
+}
+
+.timeline-table th {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+
 /* MAIN TEXT */
 
 .main-content p {
