@@ -535,11 +535,19 @@ a:hover {
 }
 
 
+
+/* Workshop titles only */
 .workshop-title,
 .workshop-title a {
   font-size: 12px;
   font-weight: 100;
+  line-height: 1.5;
 }
+
+.workshop-title {
+  margin: 10px 0;
+}
+
 
 
 /* SMALL MOBILE DEVICES */
