@@ -540,12 +540,12 @@ a:hover {
 .workshop-title,
 .workshop-title a {
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 250;
   line-height: 1.5;
 }
 
 .workshop-title {
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 
