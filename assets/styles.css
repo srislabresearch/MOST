@@ -536,17 +536,19 @@ a:hover {
 
 
 
-/* Workshop titles only */
-.workshop-title,
-.workshop-title a {
-  font-size: 14px;
-  font-weight: 250;
+
+/* Only workshop headings */
+section[aria-labelledby="workshops-heading"] h3.workshop-title,
+section[aria-labelledby="workshops-heading"] h3.workshop-title a {
+  font-size: 14px !important;
+  font-weight: 400 !important;
   line-height: 1.5;
 }
 
-.workshop-title {
+section[aria-labelledby="workshops-heading"] h3.workshop-title {
   margin: 10px 0;
 }
+
 
 
 
